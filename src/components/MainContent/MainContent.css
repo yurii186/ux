@@ -1,0 +1,181 @@
+/* Основной контейнер */
+.main-content {
+    font-family: Arial, sans-serif;
+}
+
+/* Существующий раздел приветствия */
+.welcome-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    background-color: #fff;
+}
+
+.welcome-text {
+    max-width: 50%;
+}
+
+.welcome-text h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.welcome-text p {
+    font-size: 20px;
+    text-align: justify;
+    line-height: 1.6;
+}
+
+.info {
+    max-width: 30%;
+    font-size: 18px;
+    background-color: #d2c07b;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.image-section {
+    margin-top: 20px;
+}
+
+.main-image {
+    width: 100%;
+    height: auto;
+}
+
+/* Новый раздел "Čo je Zla Diera?" */
+.about-section {
+    padding: 40px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.about-section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.about-section p {
+    font-size: 18px;
+    text-align: justify;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.about-image-section {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.about-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+/* Новый раздел "História jaskyne Zlá Diera" */
+.history-section {
+    padding: 40px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.history-section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.history-section p {
+    font-size: 18px;
+    text-align: justify;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.history-image-section {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.history-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+/* Адаптивность для мобильных устройств */
+@media (max-width: 768px) {
+    /* Общие настройки для мобильных */
+    .main-content {
+        padding: 20px;
+    }
+
+    /* Раздел приветствия */
+    .welcome-section {
+        flex-direction: column; /* Смена направления на колонку */
+        align-items: center;
+        text-align: center;
+    }
+
+    .welcome-text, .info {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .welcome-text h1 {
+        font-size: 24px; /* Уменьшение размера заголовка */
+    }
+
+    .welcome-text p {
+        font-size: 16px; /* Уменьшение шрифта для текста */
+    }
+
+    .info {
+        font-size: 16px;
+        padding: 15px;
+    }
+
+    /* Изображение */
+    .main-image {
+        width: 100%; /* Изображение занимает всю ширину */
+    }
+
+    /* Раздел "Čo je Zla Diera?" */
+    .about-section {
+        padding: 20px;
+        text-align: justify; /* Выравнивание текста по ширине */
+    }
+
+    .about-section h2 {
+        font-size: 24px; /* Уменьшение заголовка */
+    }
+
+    .about-section p {
+        font-size: 16px;
+    }
+
+    .about-image {
+        width: 100%;
+        height: auto; /* Сохранение пропорций изображения */
+    }
+
+    /* Раздел "História jaskyne Zlá Diera" */
+    .history-section {
+        padding: 20px;
+    }
+
+    .history-section h2 {
+        font-size: 24px;
+    }
+
+    .history-section p {
+        font-size: 16px;
+    }
+
+    .history-image {
+        width: 100%;
+        height: auto; /* Сохранение пропорций изображения */
+    }
+}
